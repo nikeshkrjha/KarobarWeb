@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('karobar/', include('karobar.urls')),
+    path('karobar/api/', include('api.urls')),
     path('', include('karobar.urls')),
     path('admin/', admin.site.urls),
 ]
