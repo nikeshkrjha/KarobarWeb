@@ -4,6 +4,8 @@ from api import views
 
 urlpatterns = [
     path('customers/', views.CustomerList.as_view()),
+    path('suppliers/', views.SupplierList.as_view()),
+    path('payments/', views.PaymentsReceivedList.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

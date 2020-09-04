@@ -126,5 +126,7 @@ STATIC_URL = '/static/'
 # settings for the REST api
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10
+    'PAGE_SIZE': 10,
+    # to make sure the decimal field value does not get forced to string
+    'COERCE_DECIMAL_TO_STRING': False
 }
