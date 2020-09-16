@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'karobar.apps.KarobarConfig',
     'api.apps.ApiConfig',
+    'users.apps.UsersConfig',
     'rest_framework'
 ]
 
@@ -130,3 +131,6 @@ REST_FRAMEWORK = {
     # to make sure the decimal field value does not get forced to string
     'COERCE_DECIMAL_TO_STRING': False
 }
+
+
+# AUTH_USER_MODEL = 'users.CustomUser'
